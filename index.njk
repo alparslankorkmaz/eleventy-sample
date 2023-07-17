@@ -83,8 +83,8 @@
         </p>
         <br />
         <p>
-          Feed Factors is the only trading company in the UK to hold two queens
-          awards for enterprise in the categories of; ‘Innovation’ and
+          Feed Factors is the only trading company in the UK to hold The Queen's
+          Awards for Enterprise in the categories of; ‘Innovation’ and
           ‘Sustainable Development’. We are also proud to achieve a carbon
           neutral status for our head office in addition to being part of the
           GAFTA sustainability pledge.
@@ -117,7 +117,7 @@
                 <a href="/organic">
                   <span class="link-spanner"></span>
                 </a>
-                <img src="../public/images/products/organic.jpeg" alt="" />
+                <img src="../public/images/products/slide_organic.png" alt="" />
               </div>
             </div>
 
@@ -126,7 +126,7 @@
                 <a href="/petfood">
                   <span class="link-spanner"></span>
                 </a>
-                <img src="../public/images/products/dog2.jpeg" alt="" />
+                <img src="../public/images/products/slide_pet.png" alt="" />
               </div>
             </div>
 
@@ -135,7 +135,7 @@
                 <a href="/animalfeed">
                   <span class="link-spanner"></span>
                 </a>
-                <img src="../public/images/products/chickens.jpg" alt="" />
+                <img src="../public/images/products/slide_feed.png" alt="" />
               </div>
             </div>
           </div>
@@ -153,16 +153,17 @@
             <div class="info current--info">
               <p class="h1 text name">ORGANIC</p>
 
-              <p class="text description">
-                Traceable throughout
-              </p>
+              <p class="text description">Traceable throughout</p>
             </div>
 
             <div class="info next--info">
               <p class="h1 text name">PET FOOD</p>
 
-              <p class="text description">The largest supplier of ‘grain free ingredients’ <br />
-                both in the UK and the continent</p>
+              <p class="text description">
+                The largest supplier of ‘grain free <br />
+                ingredients’ both in the UK <br />
+                and the continent
+              </p>
             </div>
 
             <div class="info previous--info">
@@ -172,7 +173,8 @@
               </p>
 
               <p class="text description">
-                Importing soybeans into the UK for the last 35 years
+                Importing soybeans into <br />
+                the UK for the last 35 years
               </p>
             </div>
           </div>
@@ -209,4 +211,8 @@
   });
 </script>
 
-{% endblock %}
+{% include 'partials/carousel.html' %}
+{% include 'partials/map.html' %} 
+
+{% endblock content %}
+

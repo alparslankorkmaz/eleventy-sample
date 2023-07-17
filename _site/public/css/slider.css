@@ -17,8 +17,6 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  /* background-image: url("/static/images/footer/footerbg.png");
-  background-color: #333333; */
 }
 
 #slider-button {
@@ -175,7 +173,7 @@
   --card-translateX-offset: 0;
   --card-rotation-offset: var(--current-card-rotation-offset);
   --card-scale-offset: 1.2;
-  --opacity: 0.8;
+  --opacity: 1;
 }
 .slider-card.previous--card {
   --card-translateX-offset: calc(-1 * var(--card-width) * 1.1);
@@ -188,7 +186,7 @@
 .slider-card.previous--card,
 .slider-card.next--card {
   --card-scale-offset: 0.9;
-  --opacity: 0.4;
+  --opacity: 1;
 }
 .infoList {
   position: absolute;
@@ -207,21 +205,21 @@
   transform-style: preserve-3d;
 }
 .info {
-  margin-bottom: calc(var(--card-height) / 8);
-  margin-left: calc(var(--card-width) / 1.5);
+  margin-bottom: calc(var(--card-height) / 5.85);
+  margin-left: calc(var(--card-width) / 1.09);
+  width: calc(var(--card-width) * 1.16);
   transform: translateZ(2rem);
   transition: transform var(--card-transition-duration)
     var(--card-transition-easing);
-  background-color: #333333;
-  /* border-radius: 10px; */
+  /* background-image: linear-gradient(transparent, #33333370); */
   padding: 20px;
 }
 
 .info .text {
   position: relative;
   font-family: "Oswald";
-  font-size: calc(var(--card-width) * var(--text-size-offset, 0.2));
-  white-space: nowrap;
+  /* font-size: calc(var(--card-width) * var(--text-size-offset, 0.18)); */
+  /* white-space: nowrap; */
   color: #fff;
   width: fit-content;
 }
@@ -230,35 +228,6 @@
   font-weight: 500;
 }
 
-.info .location {
-  font-weight: 600;
-}
-.info .location {
-  --mg-left: 40px;
-  --text-size-offset: 0.12;
-  font-weight: 400;
-  margin-left: var(--mg-left);
-  margin-bottom: calc(var(--mg-left) / 2);
-  padding-bottom: 0.8rem;
-}
-.info .location::before,
-.info .location::after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  left: 0%;
-  transform: translate(calc(-1 * var(--mg-left)), -50%);
-}
-.info .location::before {
-  top: 50%;
-  width: 20px;
-  height: 5px;
-}
-.info .location::after {
-  bottom: 0;
-  width: 60px;
-  height: 2px;
-}
 .info .description {
   --text-size-offset: 0.065;
   font-weight: 300;

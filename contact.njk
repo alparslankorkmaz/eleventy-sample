@@ -1,6 +1,6 @@
 {% extends "layout.njk" %} {% block content %}
 <div class="container col-10">
-  <div class="row justify-content-around">
+  <div class="row justify-content-between">
     <h1 class="fw-normal py-5">CONTACT US</h1>
     <div class="contact-info col-12 col-md-4">
       <p>The Gallery, Whittaker Avenue, Richmond, TW9 1EH</p>
@@ -61,4 +61,7 @@
     </div>
   </div>
 </div>
-{% endblock %}
+
+{% include 'partials/carousel.html' %}
+
+{% endblock content %}
